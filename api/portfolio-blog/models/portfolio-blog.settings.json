@@ -1,0 +1,53 @@
+{
+  "kind": "collectionType",
+  "collectionName": "portfolio_blogs",
+  "info": {
+    "name": "PortfolioBlog"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "video": {
+      "type": "string"
+    },
+    "body": {
+      "type": "richtext"
+    },
+    "date": {
+      "type": "date"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "slideshow": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "blurb": {
+      "type": "string"
+    }
+  }
+}
