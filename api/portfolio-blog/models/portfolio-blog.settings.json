@@ -48,6 +48,9 @@
     },
     "blurb": {
       "type": "string"
+    },
+    "imgurl": {
+      "type": "string"
     }
   }
 }
